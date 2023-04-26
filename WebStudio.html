@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/Web-Studio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>WebStudio</title>
+<link rel="stylesheet" href="./WebStudio_files/normalize.css"><link rel="stylesheet" href="./WebStudio_files/style.css"></head>
+<body data-new-gr-c-s-check-loaded="14.1107.0" data-gr-ext-installed="">
+    <header>
+        <div class="conteiner">
+            <h2>Web Studio</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="http://127.0.0.1:5500/">Студія</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/">Портфоліо</a>
+                </li>
+                <li>
+                    <a href="http://127.0.0.1:5500/">Контакти</a>
+                </li>
+            
+               <li>
+                   <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a href="tel:+380 961 111 111">+380961111111</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+        
+
+           
+        <section class="promo">
+            <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+            <button>Замовити послугу</button>
+        </section>
+
+        <section class="about">
+            <ul>
+               <li>
+                   <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure.</p>
+               </li>
+
+               <li>
+                <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure</p>
+            </li>
+
+            <li>
+                <h3>ПЛАНУВАННЯ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure</p>
+            </li>
+
+            <li>
+                <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem veritatis exercitationem velit magnam iure</p>
+
+            </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>
+                Чим ми займаємося?
+            </h2>
+            <ul>
+                <li>
+                    <img src="./WebStudio_files/img.png" alt="computers">
+                </li>
+                <li>
+                    <img src="./WebStudio_files/phone.png" alt="phone">
+                </li>
+                <li>
+                    <img src="./WebStudio_files/laptop.png" alt="laptop">
+                </li>
+            </ul>
+        </section>
+
+        <section class="card">
+                    <h2>Наша команда</h2>
+                    <ul>
+                        <li>
+                        <img src="./WebStudio_files/игорь.jpeg" alt="staff">
+                        <h3>Ігор Дем’яненко</h3>
+                        <p>Product Designer</p>
+                            
+                        </li>
+                        <li>
+                         <img src="./WebStudio_files/ольга.jpeg" alt="staff">
+                         <h3>Ольга Репіна</h3>
+                         <p>Frontend Developer</p>
+                        </li>
+                        <li>
+                         <img src="./WebStudio_files/микола.jpeg" alt="staff">
+                         <h3>Микола Тарасов</h3>
+                         <p>Marketing</p>
+                        </li>
+                        <li>
+                        <img src="./WebStudio_files/михайло.jpeg" alt="staff">
+                        <h3>Михайло Єрмаков</h3>
+                        <p>UI Designer</p>
+                        </li>
+                    </ul>
+
+                </section>
+
+                <footer>
+                <nav>
+                    <ul>
+                        <li>
+                        <h3>
+                            WebStudio
+                        </h3>
+                        </li>
+                        <li>
+                            <h4>
+                                м. Київ, пр-т Лесі Українки, 26
+                            </h4>
+                        </li>
+                        <li>
+                            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </nav>
+                </footer>
+
+        
+
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+  div.grammarly-desktop-integration {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+  }
+
+  div.grammarly-desktop-integration:before {
+    content: attr(data-content);
+  }
+</style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
